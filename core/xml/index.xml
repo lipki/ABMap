@@ -1,0 +1,1367 @@
+<root>
+	<missions>
+		<mission id="entree" label="Le test d'entrÃ©e Ã  l'ESCorp" />
+		<mission id="license" cond="entree" label="La licence de forage" >
+			<case label="License nÂ°1" type="license1" x="0" y="-1" >
+				<remarque>
+					License nÂ°1
+				</remarque>
+			</case>
+			<case label="License nÂ°2" type="license2" x="2" y="1" >
+				<remarque>
+					License nÂ°2
+				</remarque>
+			</case>
+			<case label="License nÂ°3" type="license3" x="-1" y="1" >
+				<remarque>
+					License nÂ°3
+				</remarque>
+			</case>
+		</mission>
+		<mission id="douglas" cond="license" label="Appel de dÃ©tresse" />
+		<mission id="mmissile" cond="license" label="Missile abandonnÃ©" />
+		<mission id="moteurv1" cond="license" label="Un nouveau gÃ©nÃ©rateur" />
+	</missions>
+	<cases>
+		<case type="origine" x="0" y="0" >
+			<remarque>
+				Position d'origine
+			</remarque>
+		</case>
+		<case type="missile" x="-17" y="11" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="16" y="25" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="14" y="1" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="5" y="8" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="8" y="-2" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="13" y="-21" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="-38" y="29" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="-17" y="11" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="-10" y="-5" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="-8" y="-1" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="4" y="16" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="39" y="-14" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="54" y="35" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="-297" y="66" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="72" y="74" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="missile" x="-34" y="-7" >
+			<remarque>
+				missile
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-149" y="113" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-74" y="23" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-62" y="84" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-58" y="83" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-57" y="102" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-45" y="65" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-37" y="104" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-37" y="47" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-35" y="104" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-25" y="6" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-24" y="-4" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-20" y="31" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-16" y="-18" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-15" y="-28" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-14" y="-45" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-13" y="28" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-12" y="2" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-10" y="-42" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-10" y="73" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-8" y="40" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-7" y="-5" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="bonus" name="p" x="-1" y="20" >
+			<remarque>
+				Bonus P
+			</remarque>
+		</case>
+		<case type="antiradar" x="-18" y="39" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-19" y="46" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-22" y="49" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-27" y="40" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-26" y="38" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-27" y="41" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-27" y="44" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-8" y="-13" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-8" y="-11" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-7" y="-11" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-12" y="-12" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-10" y="-14" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-12" y="-9" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-12" y="-10" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-9" y="-9" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-8" y="-9" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-10" y="-11" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-10" y="-9" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-11" y="-12" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-11" y="-9" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-18" y="39" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-60" y="-32" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-62" y="-30" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-72" y="-28" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-26" y="38" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-27" y="41" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-10" y="-12" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-9" y="-11" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="44" y="14" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="49" y="17" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-8" y="-9" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-11" y="-9" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-22" y="49" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-26" y="42" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="antiradar" x="-26" y="45" >
+			<remarque>
+				Champ d'astÃ©roÃ¯des, risque pour votre radar.
+			</remarque>
+		</case>
+		<case type="marchand" x="-5" y="-3" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V2 : 200<br/>Missile Sup 1 : 129<br/>Capsule Feu : 20<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-5" y="-23" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 110<br/>Moteur V5 : 20031<br/>Missile Sup 1 : 105<br/>Drone n°1 : X<br/>Drone n°2 : 2404<br/>Drone n°3 : 3685<br/>Drone n°4 : X<br/>Drone n°5 : 10016<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2467<br/>Support réacteur : 1284<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-5" y="-38" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 78<br/>Moteur V5 : 26619<br/>Capsule Feu : 20<br/>Lunettes de soleil : 200<br/>Refroidissement liquide : 681<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-5" y="-39" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 87<br/>Capsule Glace : 27<br/>Capsule Trou noir : 50<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 4000<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-7" y="-19" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 108<br/>Moteur V4 : 7997<br/>Missile Sup 1 : 100<br/>Capsule Trou noir : 50<br/>Drone n°1 : X<br/>Drone n°2 : 2313<br/>Drone n°3 : 3854<br/>Drone n°4 : 6263<br/>Drone n°5 : 9635<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : X<br/>Collecteur : 2519<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-9" y="-37" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 69<br/>Missile Sup 1 : 100<br/>Capsule Feu : 20<br/>Capsule Foudre : 30<br/>Drone n°1 : X<br/>Drone n°2 : 2400<br/>Drone n°3 : 4000<br/>Drone n°4 : 4363<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2960<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-12" y="-1" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 95<br/>Missile Sup 1 : 100<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-13" y="-42" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V4 : 9306<br/>Capsule Feu : 25<br/>Capsule Foudre : 30<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 3997<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-14" y="-18" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 88<br/>Missile Sup 1 : 100<br/>Missile Sup 2 : 1007<br/>Capsule Glace : 43<br/>Capsule Feu : 12<br/>Capsule Foudre : 30<br/>Drone n°1 : X<br/>Drone n°2 : 2703<br/>Drone n°3 : 4505<br/>Drone n°4 : 7321<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2103<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-18" y="-17" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 92<br/>Moteur V4 : 8031<br/>Missile Sup 1 : 96<br/>Collecteur : 2824<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-23" y="-5" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 81<br/>Moteur V3 : 788<br/>Missile Sup 1 : 98<br/>Missile Sup 2 : 952<br/>Capsule Glace : 30<br/>Capsule Feu : 20<br/>Réacteurs latéraux : 141<br/>Drone n°1 : 693<br/>Drone n°2 : 1386<br/>Drone n°3 : 2309<br/>Drone n°4 : X<br/>Drone n°5 : 5771<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : 8228<br/>Collecteur : 2984<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-24" y="-5" >
+			<remarque>
+				Marchand :<br/>Moteur V3 : X<br/>Missile Sup 2 : X<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : X<br/>Collecteur : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-26" y="-110" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 59<br/>Moteur V5 : 19975<br/>Capsule Feu : 24<br/>Capsule Foudre : 42<br/>Moteur de synthèse perpétuel : 13039<br/>Turbo : 7500<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-30" y="-5" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 102<br/>Capsule Feu : 17<br/>Capsule Foudre : 30<br/>Lunettes de soleil : 200<br/>Collecteur : 1366<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-30" y="-55" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Glace : 30<br/>Capsule Foudre : 28<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 9825<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 4826<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-32" y="-54" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 105<br/>Capsule Foudre : 29<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10415<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 7497<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-33" y="-9" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 88<br/>Missile Sup 1 : 100<br/>Capsule Feu : 19<br/>Lunettes de soleil : 273<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 4130<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2500<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-33" y="-74" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 110<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 13012<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Support réacteur : 1250<br/>Standard : 3500<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-34" y="-10" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 121<br/>Missile Sup 1 : 100<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 4136<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2901<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-37" y="-21" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 106<br/>Moteur V4 : 8020<br/>Capsule Glace : 17<br/>Outil de perforation : 5798<br/>Collecteur : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-40" y="-76" >
+			<remarque>
+				Marchand :<br/>Moteur V6 : 160307<br/>Capsule Glace : 25<br/>Capsule Foudre : 30<br/>Moteur de synthèse perpétuel : 16145<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-42" y="-9" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 104<br/>Drone n°1 : 724<br/>Drone n°2 : 1448<br/>Drone n°3 : X<br/>Drone n°4 : 3920<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : 4881<br/>Collecteur : 2984<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-45" y="-103" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 97<br/>Moteur V4 : 10137<br/>Capsule Glace : 17<br/>Outil de perforation : 6333<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-20" y="-47" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-50" y="-47" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Foudre : 30<br/>Turbo : 7375<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-50" y="-5" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 85<br/>Moteur V4 : 11483<br/>Outil de perforation : 5500<br/>Collecteur : 2519<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-51" y="-23" >
+			<remarque>
+				Marchand :<br/>Moteur V5 : X<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-54" y="-45" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Foudre : 30<br/>Turbo : 8880<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-66" y="-99" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 85<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-79" y="-37" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Refroidissement liquide : 828<br/>Turbo : 8731<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-91" y="-58" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 6276<br/>Drone n°6 : 9163<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-96" y="-23" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 95<br/>Moteur de synthèse perpétuel : 15975<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 8912<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-97" y="-43" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 87<br/>Turbo X2 : 29911<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-98" y="-24" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Foudre : 30<br/>Capsule Trou noir : 28<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10295<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-102" y="-83" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 88<br/>Moteur V6 : 158013<br/>Moteur de synthèse perpétuel : 16031<br/>Drone n°1 : X<br/>Drone n°2 : 3566<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 14861<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 5148<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-109" y="-67" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10008<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Standard : 3283<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-114" y="-20" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 11515<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Support réacteur : 860<br/>Turbo : 5084<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-118" y="-24" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 80<br/>Moteur V6 : 163550<br/>Moteur de synthèse perpétuel : 15979<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 13987<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 5763<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-128" y="-114" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V4 : 8000<br/>Moteur V6 : 164004<br/>Moteur de synthèse perpétuel : 16000<br/>Standard : 3461<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-137" y="-124" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 102<br/>Moteur V4 : 11952<br/>Capsule Glace : 44<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-139" y="-74" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 80<br/>Refroidissement liquide : 845<br/>Turbo : 7503<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-162" y="-39" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V5 : 12868<br/>Missile Sup 2 : 1003<br/>Capsule Glace : 36<br/>Moteur de synthèse perpétuel : 16874<br/>Turbo : 8012<br/>Turbo X2 : 30281<br/>Standard : 2801<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="XX" y="XX" >
+			<remarque>
+				Marchand
+			</remarque>
+		</case>
+		<case type="marchand" x="-1" y="113" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 14<br/>Antenne Ki-Wi : 3493<br/>Refroidissement liquide : 570<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 9635<br/>Drone n°6 : 14067<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 8618<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-2" y="3" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V2 : 269<br/>Missile Sup 1 : 98<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-5" y="35" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Foudre : 30<br/>Drone n°1 : 1294<br/>Drone n°2 : 2589<br/>Drone n°3 : 4315<br/>Drone n°4 : 7011<br/>Drone n°5 : 10787<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2575<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-6" y="14" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 29<br/>Capsule Foudre : 32<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-6" y="71" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V5 : 20033<br/>Capsule Feu : 26<br/>Capsule Foudre : 29<br/>Turbo : 4289<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-6" y="82" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 123<br/>Moteur V4 : 4891<br/>Moteur de synthèse perpétuel : 15852<br/>Outil de perforation : 5520<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-8" y="8" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 114<br/>Moteur V2 : 200<br/>Moteur V3 : 1000<br/>Missile Sup 1 : 100<br/>Capsule Foudre : 27<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-8" y="14" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 96<br/>Moteur V2 : 200<br/>Moteur V3 : 1069<br/>Missile Sup 1 : 136<br/>Drone n°1 : 1660<br/>Drone n°2 : 3331<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 13837<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-10" y="24" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V5 : 16356<br/>Missile Sup 1 : 90<br/>Enveloppe de secours : 543<br/>Capsule Foudre : 30<br/>Lunettes de soleil : X<br/>Collecteur : 2550<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-13" y="8" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 62<br/>Missile Sup 1 : 107<br/>Enveloppe de secours : 470<br/>Capsule Feu : 20<br/>Réacteurs latéraux : 334<br/>Drone n°1 : 1550<br/>Drone n°2 : X<br/>Drone n°3 : 5167<br/>Drone n°4 : X<br/>Drone n°5 : 12917<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-14" y="79" >
+			<remarque>
+				Marchand :<br/>Enveloppe de secours : 632<br/>Capsule Glace : 30<br/>Capsule Foudre : 30<br/>Moteur de synthèse perpétuel : 16982<br/>Drone n°1 : 978<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 5298<br/>Drone n°5 : 8150<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-16" y="83" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 84<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-17" y="86" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 103<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-18" y="83" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 86<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : 14569<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-18" y="61" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 89<br/>Missile Sup 1 : 100<br/>Capsule Trou noir : 38<br/>Carte des missiles : 2767<br/>Turbo : 7335<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-18" y="82" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 47<br/>Missile Sup 1 : 72<br/>Capsule Foudre : 30<br/>Carte des missiles : 2757<br/>Lunettes de soleil : 200<br/>Réacteurs latéraux : 144<br/>Moteur de synthèse perpétuel : 12932<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 4496<br/>Drone n°4 : 7307<br/>Drone n°5 : 11245<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Support réacteur : 1156<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-18" y="127" >
+			<remarque>
+				Marchand :<br/>Capsule Glace : 30<br/>Moteur de synthèse perpétuel : 15882<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-20" y="2" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 87<br/>Missile Sup 1 : 77<br/>Capsule Feu : 20<br/>Refroidissement liquide : 450<br/>Collecteur : 2588<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-20" y="25" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V4 : 8091<br/>Moteur V5 : 20058<br/>Missile Sup 1 : 105<br/>Missile Sup 2 : 1383<br/>Capsule Feu : 19<br/>Lunettes de soleil : 131<br/>Drone n°1 : 1198<br/>Drone n°2 : 2395<br/>Drone n°3 : 3991<br/>Drone n°4 : 6485<br/>Drone n°5 : 9997<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2509<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-21" y="16" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 89<br/>Moteur V4 : 8001<br/>Missile Sup 1 : 100<br/>Capsule Glace : 22<br/>Outil de perforation : X<br/>Collecteur : X<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-22" y="10" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 119<br/>Missile Sup 1 : 100<br/>Enveloppe de secours : 620<br/>Capsule Trou noir : 62<br/>Drone n°1 : 1200<br/>Drone n°2 : 2400<br/>Drone n°3 : 4000<br/>Drone n°4 : 6500<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : X<br/>Collecteur : 2170<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-23" y="13" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V4 : 7864<br/>Missile Sup 1 : 99<br/>Capsule Feu : 17<br/>Capsule Trou noir : 50<br/>Drone n°1 : 1457<br/>Drone n°2 : X<br/>Drone n°3 : 4856<br/>Drone n°4 : 7892<br/>Drone n°5 : 12141<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : X<br/>Collecteur : X<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-27" y="114" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 97<br/>Capsule Glace : 37<br/>Capsule Feu : 20<br/>Carte des missiles : 2140<br/>Antenne Ki-Wi : 4946<br/>Moteur de synthèse perpétuel : 14991<br/>Drone n°1 : X<br/>Drone n°2 : 2 400 ?<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2504<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-37" y="30" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 87<br/>Moteur V3 : 1000<br/>Capsule Trou noir : 50<br/>Drone n°1 : X<br/>Drone n°2 : 1789<br/>Drone n°3 : X<br/>Drone n°4 : 4844<br/>Drone n°5 : 7451<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2513<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-37" y="89" >
+			<remarque>
+				Marchand :<br/>Moteur V4 : 8287<br/>Outil de perforation : 5500<br/>Collecteur : 2220<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-38" y="123" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 9897<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-39" y="24" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 100<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 6549<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : X<br/>Turbo : 6974<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-39" y="101" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 49<br/>Capsule Glace : 32<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-44" y="78" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 2 : 986<br/>Capsule Feu : 27<br/>Refroidissement liquide : 518<br/>Moteur de synthèse perpétuel : 16000<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-45" y="48" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 73<br/>Carte des missiles : 1996<br/>Collecteur : X<br/>Turbo : 7311<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-46" y="3" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 100<br/>Missile Sup 2 : 1000<br/>Capsule Feu : 27<br/>Capsule Foudre : 31<br/>Capsule Trou noir : 49<br/>Collecteur : 2536<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-49" y="143" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 87<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : 14442<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-56" y="85" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 75<br/>Capsule Foudre : 33<br/>Moteur de synthèse perpétuel : 15993<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-57" y="1" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 92<br/>Moteur V4 : 7995<br/>Capsule Feu : 19<br/>Capsule Foudre : 30<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-59" y="8" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Glace : 30<br/>Capsule Foudre : 30<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 5574<br/>Drone n°4 : 9059<br/>Drone n°5 : 13937<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : 5784<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-61" y="47" >
+			<remarque>
+				Marchand :<br/>Capsule Glace : 19<br/>Refroidissement liquide : 580<br/>Moteur de synthèse perpétuel : 16007<br/>Collecteur : 1896<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-62" y="77" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 2 : 1000<br/>Capsule Feu : 18<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10021<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 7524<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-64" y="0" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 20<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 2617<br/>Drone n°4 : 4252<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-68" y="118" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 21<br/>Antenne Ki-Wi : 4265<br/>Refroidissement liquide : 802<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-71" y="55" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 134<br/>Missile Sup 2 : 1000<br/>Capsule Feu : 20<br/>Capsule Foudre : 30<br/>Réacteurs latéraux : 240<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 7821<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-80" y="36" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 70<br/>Missile Sup 2 : 1000<br/>Moteur de synthèse perpétuel : 18531<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 8350<br/>Drone n°6 : 12191<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-82" y="60" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 20<br/>Capsule Foudre : 30<br/>Lunettes de soleil : 232<br/>Réacteurs latéraux : 240<br/>Refroidissement liquide : 570<br/>Moteur de synthèse perpétuel : 15865<br/>Collecteur : 3602<br/>Turbo X2 : 40062<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-96" y="143" >
+			<remarque>
+				Marchand :<br/>Moteur V6 : 126070<br/>Collecteur : 3667<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-98" y="82" >
+			<remarque>
+				Marchand :<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : 16413<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-127" y="74" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 78<br/>Capsule Glace : 30<br/>Capsule Foudre : 30<br/>Capsule Trou noir : 50<br/>Carte des missiles : 1373<br/>Antenne Ki-Wi : 4041<br/>Réacteurs latéraux : 232<br/>Refroidissement liquide : 723<br/>Collecteur : 2921<br/>Support réacteur : 1265<br/>Convertisseur : 11698<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-141" y="173" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 78<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-148" y="155" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 134<br/>Missile Sup 3 : 9984<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : 14600<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-153" y="114" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V5 : 20351<br/>Missile Sup 2 : 1001<br/>Capsule Feu : 17<br/>Antenne Ki-Wi : 4850<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-154" y="113" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V6 : 155389<br/>Antenne Ki-Wi : 4622<br/>Refroidissement liquide : 561<br/>Turbo X2 : 25947<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-155" y="108" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V6 : 171222<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-156" y="66" >
+			<remarque>
+				Marchand :<br/>Capsule Trou noir : 44<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-170" y="71" >
+			<remarque>
+				Marchand :<br/>Capsule Trou noir : 50<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 6711<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-209" y="85" >
+			<remarque>
+				Marchand :<br/>Capsule Feu : 20<br/>Antenne Ki-Wi : 4847<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 2796<br/>Drone n°4 : 4543<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-263" y="67" >
+			<remarque>
+				Marchand :<br/>Antenne Ki-Wi : 3136<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="-420" y="79" >
+			<remarque>
+				Marchand :<br/>Moteur V6 : 160010<br/>Antenne Ki-Wi : 4850<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="XX" y="XX" >
+			<remarque>
+				Marchand
+			</remarque>
+		</case>
+		<case type="marchand" x="6" y="-19" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 100<br/>Capsule Feu : 26<br/>Capsule Foudre : 30<br/>Capsule Trou noir : 27<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="8" y="-7" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 86<br/>Missile Sup 1 : 148<br/>Capsule Foudre : 28<br/>Drone n°1 : 1200<br/>Drone n°2 : 2400<br/>Drone n°3 : X<br/>Drone n°4 : 6800<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="10" y="-11" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 3705<br/>Drone n°5 : 5700<br/>Drone n°6 : 8322<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="10" y="-78" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 115<br/>Capsule Feu : 16<br/>Drone n°5 : 8073<br/>Turbo : 9228<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="15" y="-110" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 77<br/>Refroidissement liquide : 679<br/>Moteur de synthèse perpétuel : 19131<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10011<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="19" y="-55" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 100<br/>Capsule Glace : 44<br/>Réacteurs latéraux : 240<br/>Outil de perforation : 5500<br/>Convertisseur : 11500<br/>Turbo : 7635<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="20" y="-7" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 75<br/>Missile Sup 1 : 100<br/>Capsule Glace : 30<br/>Capsule Feu : 14<br/>Capsule Foudre : 30<br/>Collecteur : 2930<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="22" y="-18" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V3 : 994<br/>Moteur V4 : 10431<br/>Missile Sup 1 : 83<br/>Missile Sup 3 : 10000<br/>Capsule Feu : 12<br/>Capsule Foudre : 37<br/>Collecteur : 2595<br/>Convertisseur : 13739<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="26" y="-123" >
+			<remarque>
+				Marchand :<br/>Missile Sup 2 : 993<br/>Lunettes de soleil : 196<br/>Antenne Ki-Wi : 4851<br/>Moteur de synthèse perpétuel : 20625<br/>Drone n°1 : X<br/>Drone n°2 : 2359<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2500<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="27" y="-30" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V3 : 1186<br/>Missile Sup 1 : 100<br/>Enveloppe de secours : 634<br/>Capsule Foudre : 42<br/>Collecteur : 2500<br/>Convertisseur : 10480<br/>Standard : 3403<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="27" y="-78" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 88<br/>Carte des missiles : 2619<br/>Turbo : 5 500 ?<br/>Standard : 3500<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="30" y="-21" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V4 : 6482<br/>Missile Sup 1 : 99<br/>Capsule Glace : 30<br/>Capsule Feu : 14<br/>Capsule Trou noir : 51<br/>Collecteur : 2480<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="30" y="-34" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 100<br/>Capsule Foudre : 37<br/>Capsule Trou noir : 35<br/>Refroidissement liquide : 545<br/>Collecteur : 2519<br/>Turbo : 6504<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="31" y="-21" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V4 : 9916<br/>Moteur V5 : 20060<br/>Missile Sup 1 : 119<br/>Capsule Feu : 22<br/>Capsule Foudre : 35<br/>Drone n°1 : X<br/>Drone n°2 : 2399<br/>Drone n°3 : 3998<br/>Drone n°4 : X<br/>Drone n°5 : 9995<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2045<br/>Turbo : 7620<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="34" y="-5" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 86<br/>Moteur V4 : 5893<br/>Moteur V5 : 24390<br/>Missile Sup 1 : 100<br/>Collecteur : X<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="35" y="-5" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 85<br/>Missile Sup 1 : 100<br/>Missile Sup 2 : 1028<br/>Capsule Foudre : 40<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 4747<br/>Drone n°4 : 7715<br/>Drone n°5 : 11869<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 3203<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="36" y="-91" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 88<br/>Moteur V6 : 182347<br/>Capsule Foudre : 30<br/>Outil de perforation : 5670<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="39" y="-3" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 89<br/>Moteur V5 : 20742<br/>Missile Sup 1 : 104<br/>Capsule Trou noir : 33<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 8149<br/>Drone n°5 : 12537<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : X<br/>Support réacteur : 1124<br/>Turbo : 7500<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="45" y="-27" >
+			<remarque>
+				Marchand :<br/>Capsule Glace : 31<br/>Refroidissement liquide : 550<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="45" y="-36" >
+			<remarque>
+				Marchand :<br/>Capsule Glace : 35<br/>Capsule Feu : 21<br/>Refroidissement liquide : 570<br/>Support réacteur : 1251<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="50" y="-10" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 100<br/>Réacteurs latéraux : 240<br/>Turbo : 7500<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="55" y="-12" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 127<br/>Missile Sup 1 : 100<br/>Outil de perforation : 7487<br/>Turbo : non<br/>Standard : 3502<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="62" y="-88" >
+			<remarque>
+				Marchand :<br/>Moteur V5 : 16903<br/>Capsule Trou noir : 49<br/>Carte des missiles : 2976<br/>Moteur de synthèse perpétuel : 23592<br/>Collecteur : 2370<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="71" y="-39" >
+			<remarque>
+				Marchand :<br/>Moteur V5 : 23758<br/>Turbo : 7198<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="73" y="-64" >
+			<remarque>
+				Marchand :<br/>Moteur V5 : 15139<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="73" y="-85" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 125<br/>Capsule Glace : 30<br/>Capsule Trou noir : 55<br/>Carte des missiles : 2000<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="76" y="-25" >
+			<remarque>
+				Marchand :<br/>Moteur V6 : 142387<br/>Moteur de synthèse perpétuel : 11765<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 3752<br/>Drone n°4 : 6096<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="79 ?" y="-99 ?" >
+			<remarque>
+				Marchand :<br/>Capsule Foudre : 30<br/>Carte des missiles : 2000<br/>Collecteur : 2932<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="85" y="-77" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 22<br/>Antenne Ki-Wi : 4862<br/>Refroidissement liquide : 533<br/>Moteur de synthèse perpétuel : 15942<br/>Outil de perforation : 5626<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="88" y="-42" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 20<br/>Turbo : 7500<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="102" y="74" >
+			<remarque>
+				Marchand :<br/>Antenne Ki-Wi : 5130<br/>Moteur de synthèse perpétuel : 17898<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 6504<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="126" y="-103" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 52<br/>Capsule Glace : 20<br/>Antenne Ki-Wi : 4565<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 4000<br/>Drone n°4 : 6500<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 3043<br/>Spécial : 12186<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="128" y="-65" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 70<br/>Moteur V4 : 9180<br/>Capsule Feu : 18<br/>Capsule Trou noir : 73<br/>Antenne Ki-Wi : 6121<br/>Collecteur : 2860<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="133" y="-33" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 93<br/>Moteur V6 : 200210<br/>Moteur de synthèse perpétuel : 15979<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 9962<br/>Drone n°6 : 14544<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="141" y="-117" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V6 : 151790<br/>Antenne Ki-Wi : 4850<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 6400<br/>Drone n°5 : 9846<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Spécial : 11331<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="148" y="-85" >
+			<remarque>
+				Marchand :<br/>Moteur V4 : 7994<br/>Capsule Trou noir : 42<br/>Carte des missiles : 2000<br/>Drone n°1 : X<br/>Drone n°2 : 2403<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : 7195<br/>Collecteur : 2505<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="166" y="-138" >
+			<remarque>
+				Marchand :<br/>Antenne Ki-Wi : 4833<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 2823<br/>Drone n°4 : 4587<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Convertisseur : 11496<br/>Turbo : 7465<br/>Spécial : 12000<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="177" y="-188" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 97<br/>Capsule Glace : 30<br/>Capsule Feu : 24<br/>Antenne Ki-Wi : 4850<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 6600<br/>Drone n°5 : 10154<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 7293<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="179" y="-187" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 91<br/>Missile Sup 2 : 1000<br/>Antenne Ki-Wi : 5808<br/>Support réacteur : 849<br/>Turbo : 7499<br/>Spécial : 11901<br/>Ultime : 56858<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="179" y="-191" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 61<br/>Collecteur : 2195<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="180" y="-55" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V6 : 172763<br/>Capsule Feu : 25<br/>Capsule Trou noir : 50<br/>Refroidissement liquide : 573<br/>Support réacteur : 1263<br/>Ultime : 84316<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="180" y="-191" >
+			<remarque>
+				Marchand :<br/>Spécial : 11901<br/>Ultime : 56858<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="194" y="-20" >
+			<remarque>
+				Marchand :<br/>Moteur de synthèse perpétuel : 13303<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="217" y="-3" >
+			<remarque>
+				Marchand :<br/>Moteur V6 : 159130<br/>Antenne Ki-Wi : 5534<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10860<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="221" y="-109" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 88<br/>Standard : 3686<br/>Spécial : 10806<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="269" y="-24" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 55<br/>Capsule Glace : 17<br/>Capsule Trou noir : 50<br/>Antenne Ki-Wi : 6833<br/>Moteur de synthèse perpétuel : 16261<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 4415<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="XX" y="XX" >
+			<remarque>
+				Marchand
+			</remarque>
+		</case>
+		<case type="marchand" x="5" y="5" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V2 : 220<br/>Missile Sup 1 : 100<br/>Capsule Glace : 30<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="5" y="11" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V3 : 1000<br/>Missile Sup 1 : 125<br/>Capsule Glace : 30<br/>Capsule Feu : 21<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="7" y="54" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V5 : 20392<br/>Turbo : 7507<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="9" y="20" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 123<br/>Missile Sup 1 : 67<br/>Capsule Foudre : 30<br/>Drone n°1 : X<br/>Drone n°2 : 2395<br/>Drone n°3 : 3991<br/>Drone n°4 : 6485<br/>Drone n°5 : 9977<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : 4953<br/>Collecteur : 1817<br/>Support réacteur : 1821<br/>Convertisseur : 11532<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="9" y="124" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 20<br/>Capsule Foudre : 30<br/>Refroidissement liquide : 570<br/>Moteur de synthèse perpétuel : 15759<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="10" y="52" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Foudre : 29<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 5663<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="14" y="64" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 100<br/>Capsule Feu : 20<br/>Capsule Foudre : 30<br/>Carte des missiles : 2003<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 3169<br/>Drone n°4 : 5149<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="16" y="73" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 80<br/>Moteur V5 : 21253<br/>Carte des missiles : 2001<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 4092<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="17" y="4" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 78<br/>Missile Sup 1 : 97<br/>Capsule Feu : 20<br/>Capsule Trou noir : 54<br/>Drone n°1 : 658<br/>Drone n°2 : 1316<br/>Drone n°3 : 2193<br/>Drone n°4 : 3564<br/>Drone n°5 : 5482<br/>Drone n°6 : 8004<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="19" y="17" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 66<br/>Moteur V4 : 4603<br/>Missile Sup 1 : 100<br/>Capsule Feu : 20<br/>Capsule Foudre : 44<br/>Drone n°1 : X<br/>Drone n°2 : 2399<br/>Drone n°3 : 3998<br/>Drone n°4 : 6497<br/>Drone n°5 : 9995<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="23" y="8" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V3 : 1003<br/>Missile Sup 1 : 64<br/>Missile Sup 2 : 1019<br/>Missile Sup 3 : 14282<br/>Capsule Glace : 30<br/>Capsule Foudre : 23<br/>Drone n°1 : 1200<br/>Drone n°2 : 2400<br/>Drone n°3 : 4000<br/>Drone n°4 : X<br/>Drone n°5 : 9998<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Collecteur : 2496<br/>Support réacteur : 1341<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="28" y="8" >
+			<remarque>
+				Marchand :<br/>Capsule Glace : 30<br/>Capsule Foudre : 23<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="29" y="141" >
+			<remarque>
+				Marchand :<br/>Capsule Foudre : 39<br/>Drone n°5 : 7825<br/>Standard : 5107<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="30" y="131" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 108<br/>Spécial : 12000<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="32" y="30" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 1 : 143<br/>Capsule Feu : 20<br/>Outil de perforation : 5500<br/>Support réacteur : 1435<br/>Turbo : non<br/>Standard : non<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="32" y="153" >
+			<remarque>
+				Marchand :<br/>Moteur V4 : 11005<br/>Moteur V6 : 238097<br/>Capsule Feu : 19<br/>Capsule Foudre : 30<br/>Antenne Ki-Wi : 4268<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 4513<br/>Drone n°4 : X<br/>Drone n°5 : 11284<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Outil de perforation : 4170<br/>Collecteur : 1508<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="34" y="142" >
+			<remarque>
+				Marchand :<br/>Moteur V6 : 160001<br/>Capsule Feu : 20<br/>Capsule Foudre : 28<br/>Antenne Ki-Wi : 4850<br/>Moteur de synthèse perpétuel : 15639<br/>Support réacteur : 1250<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="34" y="157" >
+			<remarque>
+				Marchand :<br/>Capsule Feu : 20<br/>Capsule Foudre : 30<br/>Capsule Trou noir : 50<br/>Collecteur : 2258<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="38" y="123" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Foudre : 24<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : 14450<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="44" y="55" >
+			<remarque>
+				Marchand :<br/>Carte des missiles : 1193<br/>Moteur de synthèse perpétuel : 17545<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="44" y="84" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 89<br/>Missile Sup 2 : 1000<br/>Capsule Feu : 17<br/>Capsule Trou noir : 49<br/>Collecteur : 2103<br/>Turbo : 6847<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="45" y="67" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 87<br/>Moteur de synthèse perpétuel : 16030<br/>Turbo : non<br/>Standard : 2777<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="45" y="104" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V6 : 159978<br/>Missile Sup 2 : 816<br/>Capsule Trou noir : 47<br/>Carte des missiles : 2046<br/>Antenne Ki-Wi : 5014<br/>Collecteur : 2501<br/>Turbo : 7500<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="47" y="33" >
+			<remarque>
+				Marchand :<br/>Capsule Feu : 20<br/>Capsule Foudre : 24<br/>Refroidissement liquide : 696<br/>Outil de perforation : 5303<br/>Turbo : 9082<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="64" y="162" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 92<br/>Capsule Feu : 20<br/>Refroidissement liquide : 645<br/>Moteur de synthèse perpétuel : 13510<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 9683<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="65" y="65" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Missile Sup 2 : 963<br/>Capsule Glace : 28<br/>Capsule Feu : 20<br/>Capsule Trou noir : 50<br/>Refroidissement liquide : 631<br/>Turbo : 7434<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="66" y="137" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 15<br/>Carte des missiles : 2952<br/>Moteur de synthèse perpétuel : 22088<br/>Convertisseur : 10048<br/>Turbo : 7491<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="66" y="155" >
+			<remarque>
+				Marchand
+			</remarque>
+		</case>
+		<case type="marchand" x="68" y="155" >
+			<remarque>
+				Marchand :<br/>Moteur de synthèse perpétuel : 16137<br/>Standard : 3252<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="69" y="77" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 22<br/>Capsule Trou noir : 53<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="71" y="82" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Feu : 20<br/>Refroidissement liquide : 569<br/>Moteur de synthèse perpétuel : 13921<br/>Standard : 2923<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="79" y="77" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 130<br/>Capsule Foudre : 26<br/>Moteur de synthèse perpétuel : 16006<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="83" y="21" >
+			<remarque>
+				Marchand :<br/>Carte des missiles : 1687<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : 2295<br/>Drone n°4 : 3729<br/>Drone n°5 : 5736<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="97" y="44" >
+			<remarque>
+				Marchand :<br/>Capsule Trou noir : 50<br/>Réacteurs latéraux : 293<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10734<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="100" y="80" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 66<br/>Capsule Feu : 19<br/>Capsule Foudre : 31<br/>Turbo : 8109<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="100" y="99" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Trou noir : 50<br/>Antenne Ki-Wi : 5350<br/>Moteur de synthèse perpétuel : 13346<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="102" y="74" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 106<br/>Capsule Foudre : 30<br/>Antenne Ki-Wi : 5130<br/>Refroidissement liquide : 570<br/>Moteur de synthèse perpétuel : 17898<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : 10007<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="107" y="84" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 127<br/>Moteur V5 : 17161<br/>Antenne Ki-Wi : 4850<br/>Moteur de synthèse perpétuel : 15761<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 6500<br/>Drone n°5 : 10000<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="127" y="174" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 65<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="129" y="1" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 92<br/>Moteur V5 : 17862<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 5254<br/>Drone n°5 : 8082<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo : 7530<br/>Turbo X2 : 30000<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="175" y="161" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 91<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : X<br/>Drone n°5 : X<br/>Drone n°6 : 14608<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="176" y="84" >
+			<remarque>
+				Marchand :<br/>Capsule Glace : 23<br/>Moteur de synthèse perpétuel : 15219<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="177" y="57" >
+			<remarque>
+				Marchand :<br/>Moteur V5 : 27840<br/>Capsule Glace : 29<br/>Capsule Feu : 11<br/>Antenne Ki-Wi : 6441<br/>Refroidissement liquide : 338<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="178" y="9" >
+			<remarque>
+				Marchand
+			</remarque>
+		</case>
+		<case type="marchand" x="226" y="25" >
+			<remarque>
+				Marchand :<br/>Enveloppe de secours : 709<br/>Capsule Glace : 30<br/>Capsule Feu : 28<br/>Capsule Foudre : 30<br/>Capsule Trou noir : 35<br/>Antenne Ki-Wi : 7114<br/>Moteur de synthèse perpétuel : 11745<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="250" y="112" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 89<br/>Capsule Foudre : 30<br/>Turbo : 7559<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="387" y="113" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Capsule Glace : 26<br/>Capsule Feu : 30<br/>
+			</remarque>
+		</case>
+		<case type="marchand" x="415" y="89" >
+			<remarque>
+				Marchand :<br/>Capsule Hydrogène Solide : 90<br/>Moteur V5 : 20801<br/>Drone n°1 : X<br/>Drone n°2 : X<br/>Drone n°3 : X<br/>Drone n°4 : 7249<br/>Drone n°5 : X<br/>Drone n°6 : X<br/>Drone n°7 : X<br/>Drone n°8 : X<br/>Drone n°9 : X<br/>Drone n°10 : X<br/>Turbo X3 : 241759<br/>
+			</remarque>
+		</case>
+	</cases>
+</root>

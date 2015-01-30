@@ -1,0 +1,323 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background: #1c1d39 url(../images/core_planet.png) left bottom no-repeat;
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+	color: #fff;
+	overflow: hidden;
+}
+
+
+hr {
+	height: 1px;
+	width: ;
+	background: #CAAAC7;
+	margin: 5px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+hr {
+	clear: both;
+}
+
+*.hide {
+	display: none;
+}
+
+#bulle {
+	position: absolute;
+	outline: 2px solid #000;
+	border: 1px solid #FFD500;
+	background: #89416F;
+	color: #CAAAC7;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 10px;
+}
+
+
+
+
+
+#menu {
+	position: relative;
+	width: 182px;
+	height: 100%;
+	float: left;
+	padding: 0 9px;
+	background: url(../images/menu_fond.png) repeat-y;
+}
+
+#menu h1 {
+	display: block;
+	width: 200px;
+	height: 47px;
+	margin: 0 -9px;
+	background: url(../images/titre.png) repeat-y;
+}
+
+#menu h1 span {
+	display: none;
+}
+
+#menu h2 {
+	font-size: 0.8em;
+	color: #E3D500;
+}
+
+#menu div.content {
+	margin: 0 17px 0 10px;
+	clear: both;
+}
+
+#menu div.contributeur {
+	position: absolute;
+	bottom: 10px;
+	width: 162px;
+	margin: 0 17px 0 10px;
+}
+
+#menu input.coor {
+	background: #33716C;
+	border: 1px solid #8BEFFF;
+	text-align: center;
+	color: #FFF;
+	width: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#menu input.go {
+	width: 30px;
+	font-size: 0.7em;
+	padding: 0 5px;
+	margin: 0 0 1px;
+	background: #384370;
+	text-align: center;
+	color: #FF9D4D;
+	border: 1px solid #67749A;
+	-moz-border-radius: 5px;
+}
+
+#menu ul {
+	list-style: none;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+#menu ol {
+	margin: 0 0 0 10px;
+}
+
+#menu li {
+	position: relative;
+	display: block;
+	padding: 0 5px;
+	margin: 0 0 1px;
+	background: #384370;
+	text-align: center;
+	color: #FF9D4D;
+	border: 1px solid #67749A;
+}
+
+#menu li:hover {
+	color: #FFF;
+	background: #43948D;
+}
+
+#menu li input {
+	position: absolute;
+	top: 0;
+	right: -7px;
+}
+
+#menu li .message {
+	position: absolute;
+	top: 30px;
+	left: 200px;
+	display: none;
+}
+
+#menu li img.fin { display: none; }
+
+
+
+ul#tab {
+	margin: 0;
+	position: relative;
+	display: block;
+	background: url(../images/tab_fond.png) top repeat-x;
+	text-align: center;
+	font-size: 7.5pt;
+	font-weight: bold;
+	padding: 1px 12px 0;
+	height: 30px;
+}
+
+ul#tab li {
+	float: left;
+	display: block;
+	width: 79px;
+	height: 21px;
+	border: 0;
+	color: #3399ff;
+	margin: 0;
+	background: url(../images/tab_off.png);
+	padding: 4px 0;
+	cursor: pointer;
+}
+ul#tab li:hover, ul#tab li.on {
+	background: url(../images/tab_on.png);
+	color: #fff;
+}
+#menu div.missions {
+	display: none;
+}
+
+
+
+
+#content {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+#carte {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+div.calque {
+	position: absolute;
+	width: 4000px;
+	height: 4000px;
+	margin: -2000px -2000px;
+}
+
+div.grille {
+	background: #000 url(../images/grille.png) center center;
+	opacity: .95;
+}
+
+div.centre div.cible {
+	position: absolute;
+	background: url(../images/cible.png) center center no-repeat;
+	width: 29px;
+	height: 27px;
+	top: 1987px;
+	left: 1986px;
+	opacity: .5;
+}
+
+div.centre div.cible span{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	padding: 10px;
+	width: 50px;
+	font-weight: bold;
+	font-size: 0.6em;
+	color: #f00;
+	display: block;
+}
+
+div.centre div.haut, div.centre div.bas {
+	position: absolute;
+	left: 10px;
+	background: url(../images/cible_verti.png) center center repeat-y;
+	width: 9px;
+	height: 2000px;
+}
+
+div.centre div.bas { top: 27px; }
+div.centre div.haut { top: -2000px; }
+
+div.centre div.gauche, div.centre div.droit {
+	position: absolute;
+	top: 9px;
+	background: url(../images/cible_hori.png) center center repeat-x;
+	height: 9px;
+	width: 2000px;
+}
+
+div.centre div.gauche { left: -2000px; }
+div.centre div.droit { left: 29px; }
+
+div.sombre {
+	background: url(../images/calque_sombre.png) no-repeat center center;
+}
+
+div.clair {
+	background: url(../images/calque_clair.png) no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.centrecase {
+	position: absolute;
+	top: 1991px;
+	left: 1990px;
+}
+
+div.case {
+	position: absolute;
+	width: 19px;
+	height: 17px;
+}
+
+
+
+
+
+
+
+div.message {
+	position: absolute;
+	top: 100px;
+	left: 230px;
+	outline: 2px solid #000;
+	border: 1px solid #FFD500;
+	background: #89416F;
+	color: #CAAAC7;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 10px;
+}
+div.message p {
+	margin: 5px 0;
+}
+div.message a {
+	font-weight: bold;
+	color: #E3D500;
+}
+div.message h2 {
+	margin: 7px 0 0;
+	font-size: 1.2em;
+	color: #E3D500;
+}
+div.message ul, div.message dl, div.message dd {
+	margin: 3px 0 3px 10px;
+}

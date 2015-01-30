@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" dir="ltr" >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Carte d'alpha bounce" />
+		<meta name="reply-to" content="kevin@lepeltier.info" />
+		<meta name="author" content="Kevin lepeltier [Lipki]" />
+		<meta name="robots" content="follow" />
+		<meta http-equiv="Content-language" content="fr" />
+	
+		<title>Alpha Bounce Maps</title>
+		
+		<link href="core/css/styles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="./core/js/jquery-1.1.4.js" ></script>
+		<script type="text/javascript" src="./core/js/jquery.add.js" ></script>
+	</head>
+	<body>
+		
+		<div id="menu">
+			<h1><span>Alpha Bounce maps</span></h1>
+			
+			<br/>
+			
+			<div class="content">
+				<h2>ALLER A</h2>
+				[ <input class="coor x" type="text" value="0"/> ] [ <input class="coor y" type="text" value="0"/> ] <input class="go" type="submit" value="GO"/><br/>
+			</div>
+			
+			<br/>
+			
+			<ul id="tab">
+				<li class="on global">GLOBAL</li>
+				<li class="off missions">MISSIONS</li>
+			</ul>
+			
+			<div class="content tab global">
+				<ul>
+					<li class="sombre">Carte non-explorée</li>
+					<li class="clair">Carte explorée</li>
+					<li class="centre">Croix centrale</li>
+				</ul>
+				<br/>
+				<ul>
+					<li class="marchand">Marchand</li>
+					<li class="missile">Missile</li>
+					<li class="bonus">Bonus</li>
+					<li class="antiradar">Astéroïde anti-radar</li>
+				</ul>
+			</div>
+			
+			<div class="content tab missions">
+				<ul id="missions"></ul>
+			</div>
+			
+			<br/>
+			
+			<div class="content contributeur">
+				<h2>CONTRIBUTEUR</h2>
+				<ul>
+					<li><a target="_blank" href="http://www.alphabounce.com/user/8143">takayuki</a></li>
+					<li><a target="_blank" href="http://www.alphabounce.com/user/28018">leve007</a></li>
+					<li><a target="_blank" href="http://www.alphabounce.com/user/2898">chatguiinbae</a></li>
+					<li><a target="_blank" href="http://www.alphabounce.com/user/40816">tommm3</a></li>
+					<li><a target="_blank" href="http://www.alphabounce.com/user/7853">MacLambert</a></li>
+					<li><a target="_blank" href="http://www.alphabounce.com/user/47341">Lipki</a></li>
+					<li>Alpha bounce map v1.5 </li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="cartenoir"></div>
+	
+		<div id="content">
+			<div id="carte">
+				<div class="calque grille"></div>
+				<div class="calque sombre"></div>
+				<div class="calque clair"></div>
+				<div class="calque centre fixe">
+					<div class="cible">
+						<span>[0][0]</span>
+						<div class="haut"></div>
+						<div class="bas"></div>
+						<div class="gauche"></div>
+						<div class="droit"></div>
+					</div>
+				</div>
+				<div class="calque cases">
+					<div class="centrecase"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="bulle">
+			<img class="load" src="./core/images/ajax-loader.gif"/>
+			<span></span>
+		</div>
+		
+		<div class="message hello">
+			<p>
+				Bonjour,<br/>
+				Bienvenue sur ALPHA BOUNCE MAP,<br/>
+				la carte de l'univers faite pour vous.
+			<p/>
+			<p>
+				Pour savoir comment utiliser cette carte, <a href="javascript:;" class="btn_aide">lisez ceci</a>.
+			<p/>
+			<p>
+				Vous possédez une information qui n'est pas présente sur la carte !<br/>
+				-> Indiquez-le sur le <a href="http://www.alphabounce.com/forum" target="_blank">forum officiel</a>.<br/>
+				Vous jouez actuellement sur une zone du jeu absente de la carte !<br/>
+				-> <a href="javascript:;" class="btn_screen" >Apprenez à prendre un screen</a>, et envoyez-le à <a href="mailto:dizi@hotmail.fr?subject=ALPHA BOUNCE MAP screen&body=Ajouter la coordonnée haut gauche du screen, ne pas oublier le screen ;)">di-zi@hotmail.fr</a>.
+			<p/>
+			<p>
+				Pour toutes autres choses : compliments, félicitations, remerciements, voire même fautes d'orthographe <a href="mailto:dizi@hotmail.fr?subject=ALPHA BOUNCE MAP divers&body=D'avance merci de participer. ;)">di-zi@hotmail.fr</a>.
+			<p/>
+			<p>
+				Merci de votre attention.
+				(ps. pour fermer cette fenêtre cliquez dessus :)
+			<p/>
+		</div>
+		
+		<div class="message aide hide">
+			<p>
+				Cette carte a pour but de rassembler des informations sur notre univers.<br/>
+				Et de naviguer parmi ces informations, le plus simplement possible.<br/>
+				Cela dans le but avoué de vous permettre à vous, détenus, de passer un agréable moment dans notre univers.
+			<p/>
+			<h2>Compatibilité</h2>
+			<p>
+				Tester pour Firefox 2<br/>
+				et pour internet explorer 7.
+			<p/>
+			<h2>Fonctionnalité</h2>
+			<ul>
+				<li>Menu
+					<dl>
+						<dt>ALLER A</dt>
+							<dd>Déplace la carte aux coordonnées choisies.</dd>
+						<dt>GLOBAL</dt>
+							<dd>
+								Afficher ou masquer les éléments génériques de la carte :
+								<ul>
+									<li>Carte non-explorée</li>
+									<li>Carte explorée</li>
+									<li>Croix centrale</li>
+									<li>Marchand</li>
+									<li>Missile</li>
+									<li>Bonus</li>
+									<li>Astéroïde anti-radar</li>
+								</ul>
+							</dd>
+						<dt>MISSIONS</dt>
+							<dd>Voir l'intitulé des missions.</dd>
+							<dd>Voir le message de fin de mission.</dd>
+							<dd>Une mission cochée, laisse voir les missions qui en découlent.</dd>
+					</dl>
+				</li>
+				<li>Carte
+					<ul>
+						<li>Voir les coordonnées de la souris.</li>
+						<li>Voir des informations concernant la case survolée.</li>
+						<li>Déplacement clic &amp; go.</li>
+						<li>Url dynamique contenant les coordonnées actuelles.</li>
+					</ul>
+				</li>
+			</ul>
+			<h2>Futur</h2>
+			<p>
+				De nombreux détenus ont accumulé des informations sur notre univers,<br/>
+				le but aujourd'hui sera de réunir ces informations pour le bien de tous.
+			<p/>
+			<ul>
+				<li>Affichage du nom des planètes.</li>
+				<li>Auto localisation des planètes.</li>
+				<li>Position : Missiles, Marchands, Etoiles, Minerais, etc...</li>
+				<li>Trou noir(avec option déplacement lent|rapide)</li>
+			</ul>
+			<h2>Technologie</h2>
+			<p>
+				html<br/>
+				javascript(jquery)<br/>
+				xml<br/>
+			<p/>
+		</div>
+		
+		<div class="message screen hide">
+			<h2>Pour faire un screen</h2>
+			<table>
+				<tr>
+					<td>Désactiver l'option mouvements visibles dans la clef à molette.</td>
+					<td><img src="./core/images/aide01.png"/></td>
+				</tr>
+				<tr>
+					<td>Placer votre souris sur le bouton clef à molette.</td>
+					<td><img src="./core/images/aide02.png"/></td>
+				</tr>
+				<tr>
+					<td>
+						Faire un screen avec la touche [ imp.écr ].<br/>
+						Le récupérer avec paint par exemple.<br/>
+						Enregistrer l'image en png, surtous pas jpeg.<br/>
+						Choisisez comme nom, les coordonnées gauche_haut.<br/>
+					</td>
+					<td><img src="./core/images/aide03.png"/></td>
+				</tr>
+				<tr>
+					<td>
+						Envoyer le tout à <a href="mailto:dizi@hotmail.fr?subject=ALPHA BOUNCE MAP screen&body=Ajouter la coordonnée haut gauche du screen, n'oublier pas le screen ;)">di-zi@hotmail.fr</a>.<br/>
+						Dernier point, un exemple de ce que je récupère dans un screen.
+					</td>
+					<td><img src="./core/images/aide04.png"/></td>
+				</tr>
+			</table>
+		</div>
+		
+	</body>
+</html>

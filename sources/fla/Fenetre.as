@@ -8,7 +8,8 @@
 	import fl.transitions.Tween
 	import fl.transitions.easing.*
 	import flash.net.URLRequest
-	import flash.net.navigateToURL;
+	import flash.net.navigateToURL
+	import flash.net.sendToURL
 
 	
 	public class Fenetre extends Sprite {
@@ -53,13 +54,15 @@
 			
 			//fond noir 95%
 			fond = new Shape()
-			fond.graphics.beginFill(0x1B1B38, 0.95)
 			fond.graphics.drawRect(0, 0, 10, 10)
+			fond.visible = false
 			addChild(fond)
 			
 			//carte
 			carte = new Sprite()
 			addChild(carte)
+			tweenX = new Tween(carte, "x", Regular.easeOut, 0, 0, 1)
+			tweenY = new Tween(carte, "y", Regular.easeOut, 0, 0, 1)
 			
 			//calques
 			calques = new Sprite()
@@ -88,7 +91,6 @@
 			// double click
 			bt = new Sprite()
 			bt.doubleClickEnabled = true
-			bt.graphics.beginFill(0x000000, 0)
 			bt.graphics.drawRect(0, 0, 10, 10)
 			addChild(bt)
 			
@@ -144,6 +146,7 @@
 				if( APPLI.infoLoc.data[varName] != undefined && !APPLI.infoLoc.data[varName] ) APPLI.menu[varName](null)
 				
 				if(id == 'planet') calques.addChildAt(calk, 1)
+				if(id == 'asteroide') calques.addChildAt(calk, 2)
 				else calques.addChild(calk)
 				return calk
 			}
@@ -167,9 +170,9 @@
 			caseX = Math.floor((posX+(lx/2))/lx)
 			caseY = Math.floor((posY+(ly/2))/ly)
 			
-			try {
-			APPLI.bulle.update(caseX, caseY)
-			} catch (e:Error) {}
+			//try {
+				APPLI.bulle.update(caseX, caseY)
+			//} catch (e:Error) {}
 			
 		}
 		
@@ -227,11 +230,12 @@
 				carte.x = -pos.x
 				carte.y = -pos.y
 			} else {
-				tweenX = new Tween(carte, "x", None.easeOut, carte.x, -pos.x, 24)
-				tweenY = new Tween(carte, "y", None.easeOut, carte.y, -pos.y, 24)
+				var time:Number = (Math.abs(carte.x+pos.x)+Math.abs(carte.y+pos.y))/50
+				tweenX.continueTo(-pos.x, time)
+				tweenY.continueTo(-pos.y, time)
 			}
 			
-			//navigateToURL(new URLRequest('javascript:window.location.replace("./#'+caseXA+','+caseYA+'");'))
+			sendToURL(new URLRequest('javascript:window.location.replace("./#'+caseXA+','+caseYA+'");'))
 			
 			// share
 			APPLI.infoLoc.data.posx = x

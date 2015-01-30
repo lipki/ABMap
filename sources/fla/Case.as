@@ -6,7 +6,7 @@
 	
 	public class Case extends MovieClip {
 		
-		private var cas:Object
+		public var cas:Object
 		private var APPLI:Application
 		
 		public var clip:MovieClip
@@ -40,6 +40,8 @@
 				clip.x = clip.y = 50 -(Math.random()*((100-clip.width))) +((100-clip.width)/2)
 			}
 			
+			this.cacheAsBitmap()
+			
 		}
 		
 		private function onAddStageIcone ( event:Event ) {
@@ -54,6 +56,7 @@
 				clip.gotoAndStop(69)
 				clip.smc.gotoAndStop(1)
 			}
+			this.cacheAsBitmap()
 			
 		}
 		

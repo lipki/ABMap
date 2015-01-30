@@ -58,34 +58,21 @@
 			icones = new Array()
 			
 			var texte:String = ''
-			if(APPLI.info) {
-				var node:XMLList = APPLI.info..cas.( @x == x && @y == y )
-				
-				txt_coor.htmlText = '\r'
+			if(APPLI.listeCaseLoad) if( APPLI.listeCaseLoad[x] != undefined && APPLI.listeCaseLoad[x][y] != undefined ) {
+				var node:Array = APPLI.listeCaseLoad[x][y]
 				for( var va in node ) {
-					var tex:String = node[va].remarque.children()
-					var nam:String = node[va].@type +' '+ node[va].@frame +' '
-					
-					if( tex != '' ) {
-						tex = tex.replace(/\n/gm, '')
-						tex = ': \r\r'+tex.replace(/<br\/>/gm, '\r')
-					}
-					tex = '       -> <b>'+nam+'<b/>'+tex
-					
-					texte += '\n\n' + tex + '\n '
-					
-					var cas:Case = new Case(node[va], true)
-					
-					cas.x = 30 + ((node[va].@type == 'Planet')? 20:0)
-					cas.y = txt_coor.height + ((node[va].@type == 'Planet')? 25:0)
-					icones.push(cas)
-					bulle.addChild(cas)
-					
-					txt_coor.htmlText += texte
+					//try {
+						texte += this['renderTexteFor_'+node[va].cas.type](node[va].cas)
+					//} catch (e:Error) {}
 				}
 			}
 			
 			txt_coor.htmlText = '['+x+']['+y+']'+texte+'\r '
+			
+			updateSize()
+		}
+		
+		private function updateSize() {
 			
 			bulle.graphics.clear()
 			bulle.graphics.beginFill(0x000000, 1)
@@ -93,12 +80,12 @@
 			bulle.graphics.lineTo(30, 2)
 			bulle.graphics.lineTo(33 + txt_coor.width, 0)
 			bulle.graphics.lineTo(35 + txt_coor.width, 5)
-			bulle.graphics.lineTo(35 + txt_coor.width, 2 + txt_coor.height)
-			bulle.graphics.lineTo(31 + txt_coor.width, 8 + txt_coor.height)
-			bulle.graphics.lineTo(19 + txt_coor.width, 7 + txt_coor.height)
-			bulle.graphics.lineTo(31, 7 + txt_coor.height)
-			bulle.graphics.lineTo(27, 8 + txt_coor.height)
-			bulle.graphics.lineTo(26, 7 + txt_coor.height)
+			bulle.graphics.lineTo(35 + txt_coor.width, 2 + txt_coor.height-15)
+			bulle.graphics.lineTo(31 + txt_coor.width, 8 + txt_coor.height-15)
+			bulle.graphics.lineTo(19 + txt_coor.width, 7 + txt_coor.height-15)
+			bulle.graphics.lineTo(31, 7 + txt_coor.height-15)
+			bulle.graphics.lineTo(27, 8 + txt_coor.height-15)
+			bulle.graphics.lineTo(26, 7 + txt_coor.height-15)
 			bulle.graphics.lineTo(23, 14)
 			bulle.graphics.lineTo(7, 5)
 			
@@ -107,12 +94,12 @@
 			bulle.graphics.lineTo(30, 4)
 			bulle.graphics.lineTo(31 + txt_coor.width, 3)
 			bulle.graphics.lineTo(33 + txt_coor.width, 6)
-			bulle.graphics.lineTo(33 + txt_coor.width, 2 + txt_coor.height)
-			bulle.graphics.lineTo(31 + txt_coor.width, 7 + txt_coor.height)
-			bulle.graphics.lineTo(20 + txt_coor.width, 5 + txt_coor.height)
-			bulle.graphics.lineTo(31, 5 + txt_coor.height)
-			bulle.graphics.lineTo(29, 6 + txt_coor.height)
-			bulle.graphics.lineTo(28, 5 + txt_coor.height)
+			bulle.graphics.lineTo(33 + txt_coor.width, 2 + txt_coor.height-15)
+			bulle.graphics.lineTo(31 + txt_coor.width, 7 + txt_coor.height-15)
+			bulle.graphics.lineTo(20 + txt_coor.width, 5 + txt_coor.height-15)
+			bulle.graphics.lineTo(31, 5 + txt_coor.height-15)
+			bulle.graphics.lineTo(29, 6 + txt_coor.height-15)
+			bulle.graphics.lineTo(28, 5 + txt_coor.height-15)
 			bulle.graphics.lineTo(25, 11)
 			bulle.graphics.lineTo(9, 5)
 			
@@ -121,16 +108,140 @@
 			bulle.graphics.lineTo(30, 5)
 			bulle.graphics.lineTo(30 + txt_coor.width, 4)
 			bulle.graphics.lineTo(32 + txt_coor.width, 6)
-			bulle.graphics.lineTo(32 + txt_coor.width, 0 + txt_coor.height)
-			bulle.graphics.lineTo(30 + txt_coor.width, 6 + txt_coor.height)
-			bulle.graphics.lineTo(20 + txt_coor.width, 4 + txt_coor.height)
-			bulle.graphics.lineTo(32, 4 + txt_coor.height)
-			bulle.graphics.lineTo(30, 5 + txt_coor.height)
-			bulle.graphics.lineTo(29, 4 + txt_coor.height)
+			bulle.graphics.lineTo(32 + txt_coor.width, 0 + txt_coor.height-15)
+			bulle.graphics.lineTo(30 + txt_coor.width, 6 + txt_coor.height-15)
+			bulle.graphics.lineTo(20 + txt_coor.width, 4 + txt_coor.height-15)
+			bulle.graphics.lineTo(32, 4 + txt_coor.height-15)
+			bulle.graphics.lineTo(30, 5 + txt_coor.height-15)
+			bulle.graphics.lineTo(29, 4 + txt_coor.height-15)
 			bulle.graphics.lineTo(26, 10)
 			bulle.graphics.lineTo(10, 5)
 		}
 		
-	}
+		
+		
+		
+		
+		
+		
+		private function renderTexteFor_marchandsol(cas_):String {
+			return renderTexteFor_marchand(cas_)
+		}
 	
+		private function renderTexteFor_trounoir(cas_):String {
+			return renderTexteJustComment(cas_)
+		}
+	
+		private function renderTexteFor_missile(cas_):String {
+			return renderTexteJustComment(cas_)
+		}
+	
+		private function renderTexteFor_mission(cas_):String {
+			return renderTexteForAll(cas_)
+		}
+	
+		private function renderTexteFor_planet(cas_):String {
+			
+			var cas:Case = new Case(cas_, true)
+			
+			cas.x = 30 + 20
+			cas.y = txt_coor.height -10 + 25
+			icones.push(cas)
+			bulle.addChild(cas)
+			
+			var tex:String = cas_.comment
+			
+			if( tex != '' ) {
+				tex = tex.replace(/\n/gm, '')
+				tex = ': \r\r'+tex.replace(/<br\/>/gm, '\r')
+			}
+			
+			return '\n\n       -> <b>'+cas_.label+'<b/>'+tex + '\n '
+		}
+	
+		private function renderTexteFor_bonus(cas_):String {
+			
+			var cas:Case = new Case(cas_, true)
+			
+			cas.x = 30
+			cas.y = txt_coor.height -10
+			icones.push(cas)
+			bulle.addChild(cas)
+			
+			var tex:String = cas_.comment
+			
+			if( tex != '' ) {
+				tex = tex.replace(/\n/gm, '')
+				tex = ': \r\r'+tex.replace(/<br\/>/gm, '\r')
+			}
+			
+			return '\n\n       -> <b>'+cas_.type+'<b/>'+tex + '\n '
+		}
+		
+		private function renderTexteFor_marchand(cas_):String {
+			var tex:String = renderTexteForAll(cas_)
+			
+			var cquery = 'SELECT '+
+							'* '+
+						 'FROM '+
+						 	'marchand_produit, produit '+
+						 'WHERE '+
+						 	'id_object = '+cas_.id+' '+
+							'AND id_produit = id '+
+						'ORDER BY label'
+			trace(cquery)
+			APPLI.query(cquery, onResult)
+			
+			return tex
+		}
+		
+		private function onResult ( result:Object ):void {
+			
+			var tex:String = ''
+			for ( var cas:Number in result ) {
+				tex += '\r' + result[cas].label + ' = ' + result[cas].cost
+			}
+			
+			txt_coor.htmlText = txt_coor.text + tex +'\r '
+			updateSize()
+			
+		}
+		
+		
+		
+	
+		private function renderTexteJustComment(cas_):String {
+			
+			var cas:Case = new Case(cas_, true)
+			
+			cas.x = 30
+			cas.y = txt_coor.height-10
+			icones.push(cas)
+			bulle.addChild(cas)
+			
+			return '\n\n       -> <b>'+cas_.comment + '\n '
+		}
+		
+		private function renderTexteForAll(cas_):String {
+			
+			var cas:Case = new Case(cas_, true)
+			
+			cas.x = 30
+			cas.y = txt_coor.height -10
+			icones.push(cas)
+			bulle.addChild(cas)
+			
+			var tex:String = cas_.comment
+			var nam:String = cas_.type
+			if( cas_.view != null ) nam += ' '+ cas_.view +' '
+			
+			if( tex != '' ) {
+				tex = tex.replace(/\n/gm, '')
+				tex = ': \r\r'+tex.replace(/<br\/>/gm, '\r')
+			}
+			
+			return '\n\n       -> <b>'+nam+'<b/>'+tex + '\n '
+		}
+		
+	}
 }

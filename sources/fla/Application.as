@@ -27,6 +27,8 @@
 		public var zoomlock:Boolean = true
 		
 		public var info:XML
+		public var oldresult:Object
+		public var newresult:Object
 		public var listeCase:Array
 		public var listeCaseLoad:Array
 		public var pointeur:int
@@ -50,8 +52,7 @@
 			// url racine
 			urlRacine = (loaderInfo.parameters.index)? './core/':'../'
 			unique = (loaderInfo.parameters.index)? Math.random():''
-			url = urlRacine+"../amfphp/gateway.php"
-			url = "http://localhost/amfphp/gateway.php"
+			url = (loaderInfo.parameters.index)? "http://www.lepeltier.info/amfphp/gateway.php":"http://localhost/amfphp/gateway.php"
 			
 			// connexion a la base de donnée
 			nc.objectEncoding = ObjectEncoding.AMF0
@@ -130,28 +131,37 @@
 							'AND y-size < '+borneB+' '+
 						'ORDER BY size DESC , dist ASC'
 			trace(cquery)
-			query(cquery)
+			query(cquery, onResult)
 		}
       
-		public function query ( $query ):void {
-			nc.call("DB.query",new Responder(onResult, onFault),$query)
+		public function query ( $query , onResult_):void {
+			nc.call("DB.query",new Responder(onResult_, onFault),$query)
 		}
 		
 		private function onResult ( result:Object ):void {
+			
+			for ( var cas:Number in oldresult )
+				listeCaseLoad[oldresult[cas].x][oldresult[cas].y][oldresult[cas].id].visible = false
+			
+			oldresult = newresult
+			newresult = (result as Array)
 			
 			listeCase = new Array()
 			
 			for ( var cas:Number in result ) {
 				if( listeCaseLoad == undefined ) listeCaseLoad = new Array()
 				if( listeCaseLoad[result[cas].x] == undefined ) listeCaseLoad[result[cas].x] = new Array()
-				if( !listeCaseLoad[result[cas].x][result[cas].y] ) {
-					listeCaseLoad[result[cas].x][result[cas].y] = true
-					listeCase.push(result[cas])
+				if( listeCaseLoad[result[cas].x][result[cas].y] == undefined ) listeCaseLoad[result[cas].x][result[cas].y] = new Array()
+				if( listeCaseLoad[result[cas].x][result[cas].y][result[cas].id] == undefined ) {
+					item = new Case(result[cas])
+					listeCaseLoad[result[cas].x][result[cas].y][result[cas].id] = item
+					calque = fenetre.addCalque( result[cas].type )
+					calque.addChild(item)
 				}
+				listeCaseLoad[result[cas].x][result[cas].y][result[cas].id].visible = true
 			}
 			
-			pointeur = 0
-			intervalId = setInterval(affiche, 0.01)
+			fenetre.topGrid()
 			
 		}
 		
@@ -159,32 +169,7 @@
 			trace("> fault : " + erreur)
 		}
 		
-		private function affiche():void {
-			
-			if(pointeur < listeCase.length) {
-				var cas:Object = listeCase[pointeur]
-				
-				item = new Case(cas)
-				listeCaseLoad[cas.x][cas.y] = item
-				calque = fenetre.addCalque( cas.type )
-				calque.addChild(item)
-				
-				menu.pourcent((pointeur*100)/listeCase.length, (cas.type as String) )
-				
-			} else {
-				clearInterval(intervalId)
-				fenetre.topGrid()
-				menu.pourcent(100)
-				
-				zoomlock = false
-				fenetre.zoom(infoLoc.data.zoom)
-			}
-			
-			this.pointeur ++
-			
-		}
-		
-		public function massLoad ( ...args ) {
+		/*public function massLoad ( ...args ) {
 			
 			if( args.length > 0 ) this.listLoad.push(args)
 			
@@ -202,7 +187,7 @@
 		private function massLoadComplet ( event:* ) {
 			this.isLoad = false
 			this.massLoad ()
-		}
+		}*/
 		
 	}
 	

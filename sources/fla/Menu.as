@@ -8,12 +8,15 @@
 	import fl.events.SliderEvent
 	import flash.events.FocusEvent
 	import flash.events.KeyboardEvent
+	import flash.utils.setTimeout
+	import flash.utils.clearTimeout
 	
 	public class Menu extends Sprite {
 		
 		private var APPLI:Application
 		
 		public var mc_pourcent:MovieClip
+		public var intervalId:uint
 		
 		public function Menu () {
 			
@@ -69,7 +72,8 @@
 		private function onResize ( event:Event ) {
 			
 			onPos ( null )
-			APPLI.refresh()
+			clearTimeout(intervalId)
+			intervalId  = setTimeout(APPLI.refresh, 1000)
 			
 		}
 		
@@ -88,8 +92,8 @@
 			
 			var frame:int = 160-Math.floor(val*1.6)
 			mc_pourcent.gotoAndStop(frame)
-			if( frame < 158 ) mc_pourcent.te.text = Math.floor(val)+'%'
-			mc_pourcent.texte.text = lab
+			//if( frame < 158 ) mc_pourcent.te.text = Math.floor(val)+'%'
+			//mc_pourcent.texte.text = lab
 			
 		}
 		

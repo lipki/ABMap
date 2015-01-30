@@ -7,8 +7,13 @@
 	import flash.net.SharedObject
 	import flash.utils.setInterval
 	import flash.utils.clearInterval
+	import flash.events.NetStatusEvent
+	import flash.events.SecurityErrorEvent
+	import flash.net.NetConnection
+    import flash.net.ObjectEncoding
+    import flash.net.Responder
+
 	
-	[ExcludeClass]
 	public class Application extends MovieClip {
 		
 		private var urlRacine:String
@@ -22,13 +27,17 @@
 		public var zoomlock:Boolean = true
 		
 		public var info:XML
-		public var listeCase:XMLList
+		public var listeCase:Array
+		public var listeCaseLoad:Array
 		public var pointeur:int
 		public var intervalId:uint
 		
 		public var infoLoc:SharedObject
 		
 		public static var APPLI:Application
+		
+		public var url:String
+		public var nc = new NetConnection()
 		
 		public function Application() {
 			
@@ -41,11 +50,17 @@
 			// url racine
 			urlRacine = (loaderInfo.parameters.index)? './core/':'../'
 			unique = (loaderInfo.parameters.index)? Math.random():''
+			url = urlRacine+"../amfphp/gateway.php"
+			url = "http://localhost/amfphp/gateway.php"
+			
+			// connexion a la base de donnée
+			nc.objectEncoding = ObjectEncoding.AMF0
+            nc.connect(url)
 			
 			// mass loader
-			listLoad = new Array()
+			/*listLoad = new Array()
 			isLoad = false
-			
+			*/
 			// ShareObjet
 			infoLoc = SharedObject.getLocal("infoLoc");
 			if( infoLoc.data.zoom == undefined ) infoLoc.data.zoom = 1
@@ -90,36 +105,71 @@
 			// bulle
 			bulle = new Bulle()
 			this.addChild(bulle)
-			
-			// chargement du xml
-			var loader:URLLoader = new URLLoader()
-				loader.addEventListener(Event.COMPLETE, completeHandler)
-				loader.load(new URLRequest(urlRacine+"xml/info.php?x="+ppx+'&y='+ppy+'&uni='+unique))
-			
+
 		}
 		
-		public function completeHandler( event:Event ) {
+		public function refresh ():void {
 			
-			info = new XML(URLLoader(event.target).data)
-			info.prettyIndent = 0
+			clearInterval(intervalId)
 			
-			listeCase = info..cas
+			// chargement
+			var pasx = Math.round(stage.stageWidth/2/fenetre.lx)
+			var pasy = Math.round(stage.stageHeight/2/fenetre.ly)
+			var borneG = fenetre.caseXA-pasx
+			var borneD = fenetre.caseXA+pasx
+			var borneH = fenetre.caseYA-pasy
+			var borneB = fenetre.caseYA+pasy
+			var cquery = 'SELECT '+
+							'*, ABS((x-('+fenetre.caseXA+'))+(y-('+fenetre.caseYA+'))) AS dist '+
+						 'FROM '+
+						 	'object '+
+						 'WHERE '+
+						 	'x+size > '+borneG+' '+
+							'AND x-size < '+borneD+' '+
+							'AND y+size > '+borneH+' '+
+							'AND y-size < '+borneB+' '+
+						'ORDER BY size DESC , dist ASC'
+			trace(cquery)
+			query(cquery)
+		}
+      
+		public function query ( $query ):void {
+			nc.call("DB.query",new Responder(onResult, onFault),$query)
+		}
+		
+		private function onResult ( result:Object ):void {
+			
+			listeCase = new Array()
+			
+			for ( var cas:Number in result ) {
+				if( listeCaseLoad == undefined ) listeCaseLoad = new Array()
+				if( listeCaseLoad[result[cas].x] == undefined ) listeCaseLoad[result[cas].x] = new Array()
+				if( !listeCaseLoad[result[cas].x][result[cas].y] ) {
+					listeCaseLoad[result[cas].x][result[cas].y] = true
+					listeCase.push(result[cas])
+				}
+			}
+			
 			pointeur = 0
-			
 			intervalId = setInterval(affiche, 0.01)
 			
 		}
 		
+		private function onFault ( erreur:Object ):void {
+			trace("> fault : " + erreur)
+		}
+		
 		private function affiche():void {
 			
-			var calque:Calque = fenetre.addCalque( 'planet' )
-			if(pointeur < listeCase.length()) {
-				var cas:XML = listeCase[pointeur]
+			if(pointeur < listeCase.length) {
+				var cas:Object = listeCase[pointeur]
 				
-					calque = fenetre.addCalque( cas.@type.toLowerCase() )
-					calque.addChild(new Case(cas))
+				item = new Case(cas)
+				listeCaseLoad[cas.x][cas.y] = item
+				calque = fenetre.addCalque( cas.type )
+				calque.addChild(item)
 				
-				menu.pourcent((pointeur*100)/listeCase.length(), cas.@type )
+				menu.pourcent((pointeur*100)/listeCase.length, (cas.type as String) )
 				
 			} else {
 				clearInterval(intervalId)

@@ -7,8 +7,9 @@
 	import flash.events.MouseEvent
 	import fl.transitions.Tween
 	import fl.transitions.easing.*
-	import flash.net.sendToURL
 	import flash.net.URLRequest
+	import flash.net.navigateToURL;
+
 	
 	public class Fenetre extends Sprite {
 		
@@ -23,8 +24,8 @@
 		private var nbCase:int
 		private var caseX:int
 		private var caseY:int
-		private var caseXA:int
-		private var caseYA:int
+		public var caseXA:int
+		public var caseYA:int
 		
 		private var tweenX:Tween
 		private var tweenY:Tween
@@ -136,13 +137,14 @@
 			if(calque[id])
 				return calque[id]
 			else {
-				var calk:Calque = new Calque(APPLI)			
+				var calk:Calque = new ObjectCalque(APPLI)			
 				calque[id] = calk
 				
 				var varName = 'view'+id.charAt(0).toUpperCase()+id.substring(1)
 				if( APPLI.infoLoc.data[varName] != undefined && !APPLI.infoLoc.data[varName] ) APPLI.menu[varName](null)
 				
-				calques.addChild(calk)
+				if(id == 'planet') calques.addChildAt(calk, 1)
+				else calques.addChild(calk)
 				return calk
 			}
 			
@@ -206,8 +208,11 @@
 		}
 		
 		public function bouge(x:int, y:int, imm:Boolean = false ) {
+			
 			caseXA = x
 			caseYA = y
+			
+			APPLI.refresh()
 			
 			if(tweenX && tweenY && tweenX.isPlaying) {
 				tweenX.stop()
@@ -222,11 +227,11 @@
 				carte.x = -pos.x
 				carte.y = -pos.y
 			} else {
-				tweenX = new Tween(carte, "x", None.easeOut, carte.x, -pos.x, 12)
-				tweenY = new Tween(carte, "y", None.easeOut, carte.y, -pos.y, 12)
+				tweenX = new Tween(carte, "x", None.easeOut, carte.x, -pos.x, 24)
+				tweenY = new Tween(carte, "y", None.easeOut, carte.y, -pos.y, 24)
 			}
 			
-			sendToURL ( new URLRequest('javascript:window.location.replace("./#'+caseXA+','+caseYA+'");'))
+			//navigateToURL(new URLRequest('javascript:window.location.replace("./#'+caseXA+','+caseYA+'");'))
 			
 			// share
 			APPLI.infoLoc.data.posx = x

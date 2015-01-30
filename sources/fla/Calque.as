@@ -1,6 +1,7 @@
 ﻿package {
 	
 	import flash.display.Sprite
+	import flash.display.DisplayObject
 	
 	public class Calque extends Sprite {
 		

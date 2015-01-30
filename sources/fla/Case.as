@@ -6,11 +6,12 @@
 	
 	public class Case extends MovieClip {
 		
-		private var cas:XML
+		private var cas:Object
 		private var APPLI:Application
 		
+		public var clip:MovieClip
 		
-		public function Case ( _cas:XML, isIcone:Boolean = false ) {
+		public function Case ( _cas:Object, isIcone:Boolean = false ) {
 			
 			cas = _cas
 			
@@ -23,17 +24,17 @@
 			
 			APPLI = parent.parent.parent.parent.parent
 			
-			gotoAndStop((cas.@frame == undefined)? cas.@type.toLowerCase():cas.@frame)
-			var pos:Object = APPLI.fenetre.getPos(cas.@x, cas.@y)
+			gotoAndStop((cas.view == undefined)? cas.type:cas.view)
+			var pos:Object = APPLI.fenetre.getPos(cas.x, cas.y)
 			x = pos.x - APPLI.fenetre.lx/2 +1
 			y = pos.y - APPLI.fenetre.ly/2 +1
-			scaleX = (1/(100/APPLI.fenetre.lx))*((cas.@taille == undefined)? 1:cas.@taille)
-			scaleY = (1/(100/APPLI.fenetre.ly))*((cas.@taille == undefined)? 1:cas.@taille)
+			scaleX = (1/(100/APPLI.fenetre.lx))*((cas.size == undefined)? 1:cas.size)
+			scaleY = (1/(100/APPLI.fenetre.ly))*((cas.size == undefined)? 1:cas.size)
 			
-			if(cas.@type == 'Asteroide') {
-				var taille:Number = Math.random()
-				clip.scaleX = clip.scaleY = taille+1
-				clip.gotoAndStop(Math.floor(taille*69)+1)
+			if(cas.type == 'asteroide') {
+				var size:Number = Math.random()
+				clip.scaleX = clip.scaleY = size+1
+				clip.gotoAndStop(Math.floor(size*69)+1)
 				clip.smc.gotoAndStop(Math.floor(Math.random()*28)+1)
 				clip.rotation = Math.random()*360
 				clip.x = clip.y = 50 -(Math.random()*((100-clip.width))) +((100-clip.width)/2)
@@ -45,11 +46,11 @@
 			
 			APPLI = parent.parent.parent.parent.parent
 			
-			gotoAndStop((cas.@frame == undefined)? cas.@type.toLowerCase():cas.@frame)
+			gotoAndStop((cas.view == undefined)? cas.type.toLowerCase():cas.view)
 			scaleX = 0.4
 			scaleY = 0.4
 			
-			if(cas.@type == 'Asteroide') {
+			if(cas.type == 'asteroide') {
 				clip.gotoAndStop(69)
 				clip.smc.gotoAndStop(1)
 			}

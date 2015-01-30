@@ -13,6 +13,8 @@
 		
 		private var APPLI:Application
 		
+		public var mc_pourcent:MovieClip
+		
 		public function Menu () {
 			
 			addEventListener(Event.ADDED_TO_STAGE, onAddStage)
@@ -59,8 +61,15 @@
 		private function onAddStage ( event:Event ) {
 			
 			APPLI = parent
-			stage.addEventListener(Event.RESIZE, onAddStage)
+			stage.addEventListener(Event.RESIZE, onResize)
 			onPos ( null )
+			
+		}
+		
+		private function onResize ( event:Event ) {
+			
+			onPos ( null )
+			APPLI.refresh()
 			
 		}
 		

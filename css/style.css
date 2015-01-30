@@ -1,0 +1,50 @@
+/* CSS file */
+
+.std
+{
+	backgroundColor: #384370;
+	borderColor: #67749A;
+	borderStyle: solid;
+}
+Button
+{
+	cornerRadius: 0;
+	borderColor: #67749A;
+	themeColor: #FFFFFF;
+	fillAlphas: 1.0, 1.0, 1.0, 1.0;
+	fillColors: #384370, #384370;
+	color: #FFFFFF;
+	paddingLeft: 2;
+	paddingTop: 2;
+	paddingRight: 2;
+	paddingBottom: 2;
+	textRollOverColor: #FFFFFF;
+	highlightAlphas: 0, 0;
+}
+ToolTip
+{
+	backgroundColor: #67749A;
+	color: #FFFFFF;
+	fontWeight: bold;
+	fontSize: 12;
+}
+TitleWindow
+{
+	cornerRadius: 0;
+	backgroundColor: #384370;
+	borderColor: #67749A;
+	borderAlpha: 1.0;
+	borderThicknessLeft: 1;
+	borderThicknessRight: 1;
+	borderThicknessBottom: 1;
+	borderThicknessTop: 1;
+	roundedBottomCorners: false;
+	color: #FFFFFF;
+	fontSize: 13;
+	fontWeight: normal;
+	headerHeight: 22;
+	controlBarStyleName: titleWindowControlBar;
+}
+.titleWindowControlBar
+{
+}

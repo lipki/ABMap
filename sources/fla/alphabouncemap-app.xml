@@ -1,0 +1,7 @@
+<application xmlns="http://ns.adobe.com/air/application/1.0.M4" appId="abmap" version="2">
+  <name>Lipki</name>
+  <title>ABMAP</title>
+  <description>Carte intractive pour le jeu alpha bounce (Motion Twin)</description>
+  <copyright>Copy left</copyright>
+  <rootContent systemChrome="standard" transparent="false" visible="true">alphabouncemap.swf</rootContent>
+</application>

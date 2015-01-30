@@ -3,11 +3,9 @@ html, body, #home {
 	height: 100%;
 	margin: 0;
 	overflow: hidden;
-	background: #ff0000;
+	background: #9a8f8f;
 }
 
-object {
-	margin: 5% 5%;
-	width: 90%;
-	height: 80%;
+home {
+	margin: auto;
 }
